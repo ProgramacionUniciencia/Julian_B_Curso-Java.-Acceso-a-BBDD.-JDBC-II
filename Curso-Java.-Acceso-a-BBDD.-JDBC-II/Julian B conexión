@@ -1,0 +1,24 @@
+importar java.sql.*;
+
+public class Conexion_BDD {
+	  public static void principal (String[] args) {
+		
+		
+		aplicar {
+			Conexión miConexion=DriverManager.getConnection("jbdc:mysql://localhost:3306/prueba", "root", "");
+		
+			Declaración miStatement=miVinculacion.createStatement();
+		
+			ResultSet miResultset=miStatement.executeQuery("SELECT*FROM ARTICULO");
+
+			while(miGrupoConsecuencia.next()){
+			}
+			  System.out.println(miResultset.getString("NOMBREUTILIDAD")+" "+miResultset.getString("SERIALACTIVO")+""+miResultset.getString("VALOR"));
+		
+	       }seleccionar(Excepción e) {
+		
+			System.out.println("NO VINCULA");
+			e.printStackTrace();
+		}
+	}
+}
